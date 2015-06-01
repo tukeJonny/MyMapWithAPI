@@ -1,0 +1,50 @@
+    <!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <title>指定された場所の観光地を紹介します！</title>
+    <meta charset="UTF-8">
+        
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script href="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script href="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/coverflow/src/js/coverflow.js"></script>
+    <link rel="stylesheet" src="/coverflow/src/css/coverflow.css" type="text/css" media="screen" />
+    
+  
+    <script type="text/javascript" src="jquery-1.11.1.js"></script>
+    <link type="text/css" rel="stylesheet" href="coverflow.css" />
+    <script src="coverflow.js"></script>
+    <script type="text/javascript" src="coverflowTest.js"></script>
+  
+    <!--- ここより上はCoverFlow作成用だったが、完全に実装するに至らなかった !-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> 
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=panoramio"></script>
+    <script type="text/javascript" src="APITester.js"></script>
+    </head>  
+    <body>
+        <h1>観光地を紹介します！（≧▽≦）b</br>(下の方に出てくる写真をクリックすると、GoogleMapが連動するよ！)</h1>
+        <h3>まずは、観光地を知りたい国を選択して、チェックしてみて！</h3>
+        <div id="map_canvas" style="width:500px; height:350px"></div>
+        
+        <!--- <button id = "readDataButton" onclick = "readData()">押して</button> !-->
+        <form name="fm">
+        <select id = "xmlselect" name="selectCountry">
+            
+        </select>
+        </form>
+        <button onclick="callRAPI()">観光地をチェック！</button>
+        <h4 id="h4">
+            ここに観光地の情報が表示されます。
+        </h6>
+        
+        
+        <!---　ここより下はCoverFlow !--->
+        <div id="coverflow">
+       
+       </div>
+    
+    </body>
+    
+    </html>
