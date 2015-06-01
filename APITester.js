@@ -133,7 +133,7 @@ function callRAPI() {
     
     script_element = document.createElement('script');
     script_element.setAttribute('type', "text/javascript");
-    var url = "http://webservice.recruit.co.jp/ab-road/spot/v1/?country=" + getCountry + "&key=51941cd9128f0b78&format=jsonp&callback=getDataFromRecruit";
+    var url = "http://webservice.recruit.co.jp/ab-road/spot/v1/?country=" + getCountry + "&key=APIKey&format=jsonp&callback=getDataFromRecruit";
     script_element.setAttribute('src', url);
     document.getElementsByTagName('head')[0].appendChild(script_element);
 }
